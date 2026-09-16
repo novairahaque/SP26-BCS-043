@@ -3,9 +3,18 @@ public class Student {
     String name;
     int compCredits;
 
-    void printSummary() {
+   void printSummary() {
         System.out.println(id);
         System.out.println(name);
         System.out.println(compCredits);
+
+    }
+
+    void rename(String name) {
+        this.name = name;
+    }
+
+    void addCredits(int amount) {
+        this.compCredits += amount;
     }
 }
