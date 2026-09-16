@@ -1,31 +1,27 @@
-public class Demo{
+public class Demo {
     public static void main(String[] args) {
-       Student s1 = new Student();
-       Student s2 = new Student();
 
-       s1.id = 015;
-       s1.name = "Usman";
-       s1.compCredits = 16;
+        Student a = new Student();
+        a.name = "Ali";
 
-       s2.id = 016;
-       s2.name = "Sana";
-       s2.compCredits = 18;
+        Student b = a;
+        b.name = "Sara";
 
-       System.out.println("Before changes: ");
+        Student c = new Student();
+        c.name = a.name;
 
-       s1.printSummary();
-       s2.printSummary();
+        System.out.println(a.name);
+        System.out.println(b.name);
+        System.out.println(c.name);
 
-       s1.name = "Ali";
-       s1.compCredits = 17;
-       
-       s2.addCredits(10);
+        System.out.println(a == b);
+        System.out.println(a == c);
 
-       
-       System.out.println("After adding credits to s2: ");   
+        b = new Student();
+        b.name = "Amna";
 
-       s1.printSummary();
-       s2.printSummary();
-
-         }
+        System.out.println(a.name);
+        System.out.println(b.name);
+        System.out.println(c.name);
     }
+}
