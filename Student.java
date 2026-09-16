@@ -1,12 +1,11 @@
-class Circle {
+public class Student {
+    int id;
+    String name;
+    int compCredits;
 
-    double radius;
-
-    double area() {
-        return Math.PI * radius * radius;
-    }
-
-    double circumference() {
-        return 2 * Math.PI * radius;
+    void printSummary() {
+        System.out.println(id);
+        System.out.println(name);
+        System.out.println(compCredits);
     }
 }
